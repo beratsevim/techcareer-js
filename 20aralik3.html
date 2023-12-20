@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin: 10px;
+            width: 90px;
+            height: 50px;
+        }
+
+        body {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        #number1,
+        #number2 {
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="number1">1. Sayi Giriniz:</label>
+    <input type="text" id="number1">
+    <label for="number2">2. Sayi Giriniz:</label>
+    <input type="text" id="number2">
+    <br>
+    <button onclick="toplama()">Toplama</button>
+    <button onclick="carpma()">Çarpma</button>
+    <br>
+    <button onclick="bolme()">Bölme</button>
+    <button onclick="cikarma()">Çıkarma</button>
+    <div>
+
+    </div>
+</body>
+<script>
+    function carpma() {
+        var number1 = document.getElementById("number1");
+        var number2 = document.getElementById("number2");
+        var number1Value = parseFloat(number1.value);
+        var number2Value = parseFloat(number2.value);
+        var pElement = document.createElement("p");
+        pElement.innerHTML = (number1Value * number2Value).toFixed(5);
+        document.querySelector("div").appendChild(pElement);
+    }
+    function toplama() {
+        var number1 = document.getElementById("number1");
+        var number2 = document.getElementById("number2");
+        var number1Value = parseFloat(number1.value);
+        var number2Value = parseFloat(number2.value);
+        var pElement = document.createElement("p");
+        pElement.innerHTML = (number1Value + number2Value).toFixed(5);
+        document.querySelector("div").appendChild(pElement);
+    }
+    function cikarma() {
+        var number1 = document.getElementById("number1");
+        var number2 = document.getElementById("number2");
+        var number1Value = parseFloat(number1.value);
+        var number2Value = parseFloat(number2.value);
+        var pElement = document.createElement("p");
+        pElement.innerHTML = (number1Value - number2Value).toFixed(5);
+        document.querySelector("div").appendChild(pElement);
+    }
+    function bolme() {
+        var number1 = document.getElementById("number1");
+        var number2 = document.getElementById("number2");
+        var number1Value = parseFloat(number1.value);
+        var number2Value = parseFloat(number2.value);
+        var pElement = document.createElement("p");
+        pElement.innerHTML = (number1Value / number2Value).toFixed(5);
+        document.querySelector("div").appendChild(pElement);
+    }
+</script>
+
+</html>
