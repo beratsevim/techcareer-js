@@ -979,9 +979,9 @@
     var filteredProducts2 = products.filter(item => item.unitPrice < 300);
     var filteredProducts3 = products.filter(item => item.unitPrice >= 100 && item.unitPrice <= 200);
     var filteredProducts4 = products.filter(item => item.unitPrice < 20).length;
-    var filteredProducts5 = products.filter(item => item.name.startsWith("A"));
+    var filteredProducts5 = products.filter(item => item.name.startsWith("A") || item.name.startsWith("a"));
     var filteredProducts5_2 = products.filter(item => item.name.charAt(0).toUpperCase() === 'A');
-    var filteredProducts6 = products.filter(item => item.name.includes('x'));
+    var filteredProducts6 = products.filter(item => item.name.includes('x') || item.name.includes('X'));
 
     console.log("Fiyatı 200'den büyük ürünler:");
     console.log(filteredProducts1);
