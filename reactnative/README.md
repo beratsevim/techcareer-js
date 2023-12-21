@@ -1,1 +1,1 @@
-![Projeresmi](resimler/Screenshot_1703190282.png)
+![Projeresmi](resimler/Screenshot_1703190282.png | %60)
