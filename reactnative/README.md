@@ -1,1 +1,1 @@
-![Projeresmi](resimler/Screenshot_1703190282.png | %60)
+<img src="resimler/Screenshot_1703190282.png" alt="alt text" width="50%">
